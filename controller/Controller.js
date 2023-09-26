@@ -8,7 +8,7 @@ class Controller {
 
         //példányosítjuk a viewt
         const NAGYKEPVIEW = new NagyKepView(MODELL.getAktualisKep(), $(".nagykep"));
-        
+
     }
 }
 export default Controller;

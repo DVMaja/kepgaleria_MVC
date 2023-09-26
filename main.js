@@ -1,6 +1,6 @@
 import Controller from "./controller/Controller.js";
 
-$(function(){
+$(function () {
     //ez a program belépésipontja
     new Controller();
 })
