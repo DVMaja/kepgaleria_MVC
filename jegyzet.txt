@@ -1,0 +1,9 @@
+MVC -> a program állapotát jeleníti meg
+
+modell: előállítja az állapotot
+view: megjeleníti az állapotot
+
+id -> hányadik képet választóttuk ki
+van alapértéke: id=0
+
+lista
