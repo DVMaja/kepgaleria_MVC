@@ -26,7 +26,7 @@ class Modell {
     }
 
     bal() {
-        //Növeli az ID értékét
+        //Csökkenti az ID értékét
         this.#id--;
         if (this.#id < 0) {
             this.#id = this.#lista.length - 1;
