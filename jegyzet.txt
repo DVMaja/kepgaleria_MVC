@@ -11,3 +11,5 @@ lista
 Modosítás
 a képeknek legyen címe leírása, ezért legen objektum-->nagyképhez
 a kisképek is jelenjenek meg, és ha meg tudod oldani azok jelenjenek meg nagyképként
+
+2 hét mulva dolgozat MVC-ből!!!! --->10.10 DOGA
