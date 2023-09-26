@@ -1,5 +1,6 @@
-import Controller from "./controller/controller.js";
+import Controller from "./controller/Controller.js";
 
 $(function(){
-    new AbortController();
+    //ez a program belépésipontja
+    new Controller();
 })
