@@ -13,8 +13,8 @@ class Modell {
         return this.#lista;
     }
 
-    getId() {
-        return this.#id;
+    getAktualisKep() {
+        return this.#lista[this.#id];
     }
 
     jobb() {
