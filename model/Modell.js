@@ -32,6 +32,7 @@ class Modell {
             this.#id = this.#lista.length - 1;
         }
     }
+    //A modell meg tudja kapni az aktuális id-t -->itt kell egy setter
 
 }
 export default Modell;
