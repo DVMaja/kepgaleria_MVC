@@ -14,12 +14,12 @@ class KisKepView {
     }
     #htmlOsszerak() {
         let txt = "";
+        txt += `<div class="row">`;
         for (const key in KEPLISTA) {
             const element = KEPLISTA[key];
-            txt += `<div class="row">        
-            <div class="col p-3><img class="kiskep" src="${KEPLISTA[key]}" alt="Cinque Terre"></div>        
-            </div>`;
+            txt += `<div ><img class="kiskep" src="${KEPLISTA[key]}" alt="Cinque Terre"></div>`;
         }
+        txt += `</div>`;
         this.SzuloElem.html(txt);
     }
 }
