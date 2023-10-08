@@ -18,7 +18,9 @@ class Controller {
             let aktKep = MODELL.getAktualisKep();
             console.log(aktKep);
             //ezt a képet kéne belerakni a főkép helyére
-            NAGYKEPVIEW.nagyKepCsere(aktKep);
+            NAGYKEPVIEW.nagyKepCsere(aktKep.eleres);
+            NAGYKEPVIEW.leirasCsere(aktKep.leiras);
+            NAGYKEPVIEW.fejlecCsere(aktKep.cim);
         })
 
         $(window).on("bal", () => {
@@ -27,7 +29,9 @@ class Controller {
             let aktKep = MODELL.getAktualisKep();
             console.log(aktKep);
             //ezt a képet kéne belerakni a főkép helyére
-            NAGYKEPVIEW.nagyKepCsere(aktKep);
+            NAGYKEPVIEW.nagyKepCsere(aktKep.eleres);
+            NAGYKEPVIEW.leirasCsere(aktKep.leiras);
+            NAGYKEPVIEW.fejlecCsere(aktKep.cim);
         })
     }
 }

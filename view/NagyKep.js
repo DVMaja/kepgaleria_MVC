@@ -11,7 +11,10 @@ class NagyKepView {
         //meg kell fogni a gombojkat
         this.balGombElem = $("#bal");
         this.jobbGombElem = $("#jobb");
+
         this.nagyKepHelye = $("#nagyKepHelye");
+        this.fejlecHelye = $(".fejlec");
+        this.leirasHelye = $(".leirasa");
 
         this.balGombElem.on("click", () => {
             this.#sajatEsemenykezelo("bal");
@@ -19,11 +22,19 @@ class NagyKepView {
 
         this.jobbGombElem.on("click", () => {
             this.#sajatEsemenykezelo("jobb");
-        })
+        })       
     }
 
     nagyKepCsere(kep) {
         this.nagyKepHelye.attr("src", kep);
+    }
+
+    leirasCsere(leiras){       
+        this.leirasHelye.html(leiras);
+    }
+
+    fejlecCsere(fejlec){        
+        this.fejlecHelye.html(fejlec);
     }
 
     #sajatEsemenykezelo(esemenynev) {
@@ -36,10 +47,10 @@ class NagyKepView {
         let txt = `<button class="col-md-1" id='bal'>BAL</button>`
         txt += "";
         txt += `<div class="card col-md-10">
-        <div class="card-header text-center">${this.#kep.cim}</div>
+        <div class="card-header text-center fejlec">${this.#kep.cim}</div>
         <div class="card-body text-center">
         <img id="nagyKepHelye" src="${this.#kep.eleres}" class="img-thumbnail" alt="Cinque Terre"></div>
-        <div class="card-footer text-center">${this.#kep.leiras}</div>
+        <div class="card-footer text-center leirasa">${this.#kep.leiras}</div>
         </div>`;
         txt += `<button class="col-md-1" id='jobb'>JOBB</button>`
         this.SzuloElem.html(txt);
