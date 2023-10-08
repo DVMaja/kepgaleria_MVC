@@ -8,7 +8,7 @@ class Controller {
         const MODELL = new Modell();
 
         //példányosítjuk a viewt
-        const NAGYKEPVIEW = new NagyKepView(MODELL.getAktualisKep(), $(".nagykep"));        
+        const NAGYKEPVIEW = new NagyKepView(MODELL.getAktualisKep(), $(".nagykep"));
         const KISKEPEKVIEW = new KisKepekView(MODELL.getList(), $(".kiskep"));
 
 
@@ -24,15 +24,15 @@ class Controller {
             NAGYKEPVIEW.fejlecCsere(aktKep.cim);
         })
 
-        $(window).on("bal", () => {           
+        $(window).on("bal", () => {
             MODELL.bal();
-            let aktKep = MODELL.getAktualisKep();                
+            let aktKep = MODELL.getAktualisKep();
             NAGYKEPVIEW.nagyKepCsere(aktKep.eleres);
             NAGYKEPVIEW.leirasCsere(aktKep.leiras);
             NAGYKEPVIEW.fejlecCsere(aktKep.cim);
         })
-    
-        $(window).on("kicsikepKatt", () => {    
+
+        $(window).on("kicsikepKatt", () => {
             //let aktKep = MODELL.getList();    
             //console.log(aktKep);
             //console.log(event.detail);

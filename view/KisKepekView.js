@@ -1,0 +1,1 @@
+// itt kéne valahogy összeállítani az összes kisképet. a KisKep segítségével
