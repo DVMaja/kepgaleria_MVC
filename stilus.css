@@ -1,4 +1,6 @@
-.kiskep{
-    max-width: 200px;
-    width: auto;
+.kiskep{   
+    width: 100%;    
+}
+.nagykep{
+    padding-bottom: 20px;
 }

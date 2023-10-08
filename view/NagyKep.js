@@ -22,18 +22,18 @@ class NagyKepView {
 
         this.jobbGombElem.on("click", () => {
             this.#sajatEsemenykezelo("jobb");
-        })       
+        })
     }
 
     nagyKepCsere(kep) {
         this.nagyKepHelye.attr("src", kep);
     }
 
-    leirasCsere(leiras){       
+    leirasCsere(leiras) {
         this.leirasHelye.html(leiras);
     }
 
-    fejlecCsere(fejlec){        
+    fejlecCsere(fejlec) {
         this.fejlecHelye.html(fejlec);
     }
 
@@ -49,7 +49,7 @@ class NagyKepView {
         txt += `<div class="card col-md-10">
         <div class="card-header text-center fejlec">${this.#kep.cim}</div>
         <div class="card-body text-center">
-        <img id="nagyKepHelye" src="${this.#kep.eleres}" class="img-thumbnail" alt="Cinque Terre"></div>
+        <img id="nagyKepHelye" src="${this.#kep.eleres}" class="img-thumbnail" alt="${this.#kep.cim}"></div>
         <div class="card-footer text-center leirasa">${this.#kep.leiras}</div>
         </div>`;
         txt += `<button class="col-md-1" id='jobb'>JOBB</button>`
