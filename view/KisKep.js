@@ -5,7 +5,7 @@ class KisKepekView {
     //#adat ;
 
     constructor(kep, SzuloElem) {
-        this.#kep = kep;
+        this.#kepek = kep;
         this.SzuloElem = SzuloElem;
         //this.adat= KEPLISTA;
         //console.log(this.#adat);

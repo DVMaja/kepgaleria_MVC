@@ -10,7 +10,7 @@ class Controller {
 
         //példányosítjuk a viewt
         const NAGYKEPVIEW = new NagyKepView(MODELL.getAktualisKep(), $(".nagykep"));
-        const KISKEPEKVIEW = new KisKepekView(KEPLISTA, $(".kiskep"));
+        //const KISKEPEKVIEW = new KisKepekView(KEPLISTA, $(".kiskep"));
         //feliratkozunk a view eseményeire
         $(window).on("jobb", () => {
             //meg kell hívni a modell megfelelő tagfüggvényeit
